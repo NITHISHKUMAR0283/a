@@ -3,18 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rive Animation</title>
-    <script src="https://unpkg.com/@rive-app/canvas"></script>
+    <title>Rive Animation on Vercel</title>
+    <script src="https://unpkg.com/@rive-app/canvas@latest"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="riveCanvas"></canvas>
-
-    <script>
-        const r = new rive.Rive({
-            src: "./animated_login_character.riv", // Change to your actual file name
-            canvas: document.getElementById("riveCanvas"),
-            autoplay: true,
-        });
-    </script>
+    <canvas id="riveCanvas" width="500" height="500"></canvas>
+    <script src="script.js"></script>
 </body>
 </html>
